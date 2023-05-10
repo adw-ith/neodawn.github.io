@@ -7,7 +7,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-color: rgb(0, 0, 0);
+  background-color: #20001c;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
@@ -670,7 +670,7 @@ select.form-control:not([size]):not([multiple]) {
 
   }
 }
-
+ 
 .footer-main .container .set{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1551,7 +1551,15 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .registration {
+  position: relative;
+  max-width: 1920px;
   overflow: hidden;
+}
+
+@media (min-width: 1920px){
+  .registration{
+    left: calc(50% - 1920px/2);
+  }
 }
 
 .registration .btn{
@@ -1696,40 +1704,75 @@ select.form-control:not([size]):not([multiple]) {
 
 .pricing .pricing-item.featured {
   border: 1px solid rgb(149, 146, 146);
+}
+
+.pricing .shad :hover{
   box-shadow: 0px 0px 7px rgb(110, 107, 107);
+
 }
 
 .pricing .pricing-item.featured a{
   color: #ffffff;
+  box-shadow: none;
 }
 
 
 .pricing .pricing-item.featured .pricing-heading {
   background: #ff6600;
+  box-shadow: none;
   border-bottom: 1px solid #ff6600;
+}
+
+.pricing .pricing-item.featured .pricing-heading .title{
+  box-shadow: none;
 }
 
 .pricing .pricing-item.featured .pricing-heading .title h6 {
   color: #fff;
+  box-shadow: none;
   border-bottom: 1px solid #f69351;
 }
 
 .pricing .pricing-item.featured .pricing-heading .price {
   margin-top: 28px;
+  box-shadow: none;
 }
 
 .pricing .pricing-item.featured .pricing-heading .price h2 {
   color: #fff;
+  box-shadow: none;
   font-size: 3.625rem;
   margin-bottom: 0px;
 }
 
 .pricing .pricing-item.featured .pricing-heading .price h2 span {
   font-size: 1.5625rem;
+  box-shadow: none;
 }
 
 .pricing .pricing-item.featured .pricing-heading .price p {
   color: #fff;
+  box-shadow: none;
+}
+
+.pricing .pricing-item.featured .pricing-body{
+  box-shadow: none;
+}
+
+.pricing .pricing-item.featured .pricing-body ul{
+  box-shadow: none;
+}
+
+.pricing .pricing-item.featured .pricing-body ul li{
+  box-shadow: none;
+}
+
+.pricing .pricing-item.featured .pricing-body ul li :hover{
+  box-shadow: none;
+}
+
+.pricing .pricing-item.featured .pricing-footer{
+  box-shadow: none;
 }
 
 .sponsors {
@@ -2488,6 +2531,11 @@ select.form-control:not([size]):not([multiple]) {
           transform: scale(1);
 }
 
+.news{
+  background: linear-gradient(#55174f,#d73863,#f96151,#f87752,#fa9319);
+
+}
+
 .news .blog-post {
   transition: .2s ease;
   margin-bottom: 30px;
@@ -2508,14 +2556,14 @@ select.form-control:not([size]):not([multiple]) {
   border-color: #e5e5e5;
 }
 
-.news .blog-post .post-content .date {
+.news .blog-post .post-content .arrowbox {
   position: absolute;
   top: -32px;
   left: 30px;
   width: 65px;
   height: 65px;
   text-align: center;
-  background: #ff6600;
+  background: #d73863;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2527,11 +2575,15 @@ select.form-control:not([size]):not([multiple]) {
           justify-content: center;
 }
 
-.news .blog-post .post-content .date h4 {
+.news .blog-post .post-content .arrowbox a {
   color: #fff;
 }
 
-.news .blog-post .post-content .date h4 span {
+.news .blog-post .post-content .arrowbox a :hover{
+  color: #f96151;
+}
+
+.news .blog-post .post-content .arrowbox h4 span {
   display: block;
   font-size: 1rem;
   font-weight: 400;
@@ -2550,11 +2602,11 @@ select.form-control:not([size]):not([multiple]) {
 .news .blog-post .post-content .post-title h2 a {
   font-size: 1.25rem;
   font-weight: 400;
-  color: #222222;
+  color: #EEEEEE;
 }
 
 .news .blog-post .post-content .post-title h2 a:hover {
-  color: #ff6600;
+  color: #55174f;
 }
 
 .news .blog-post .post-content .post-meta ul {
@@ -3174,6 +3226,7 @@ ul.pagination .active a {
   align-items: center;
 }
 
+
 .contact-form .form-control {
   margin-bottom: 30px;
 }
@@ -3249,6 +3302,7 @@ ul.pagination .active a {
   position: relative;
   display:inline-grid;
   border-radius: 16px;
+  left: calc(50% - 1536px/2);
   box-shadow: rgba(255, 255, 255, 0.16) 0px 10px 36px 0px, rgba(255, 255, 255, 0.06) 0px 0px 0px 1px;
   grid-template-columns: 2.5fr 5fr;
   max-width: 1140px;
