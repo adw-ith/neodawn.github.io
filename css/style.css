@@ -541,6 +541,45 @@ select.form-control:not([size]):not([multiple]) {
   background: transparent;
   backdrop-filter: blur(20px);
 }
+
+.main-nav .hammenu {
+  position: relative;
+  color: white;
+  right: 2rem;
+  opacity: 0;
+} 
+
+.main-nav .hammenu :hover{
+  color: #fa9319;
+}
+
+.main-nav .menu1{
+  opacity: 0;
+}
+
+@media (max-width:480px){
+  .main-nav{
+    max-height: 50px;
+    max-width: 425px;
+  }
+  .main-nav img {
+    max-width: 40px;
+    max-height: 37.5px;
+    position: relative;
+    top: -16px;
+    left: -35px;
+  }
+  .main-nav .hammenu{
+    top: -1rem;
+  }
+}
+
+@media (max-width:768px){
+  .main-nav .hammenu{
+    opacity: 1;
+  }
+}
+
 .main-nav .btn{
   border-radius: 32px;
   margin-right: 50px;
