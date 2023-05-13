@@ -1,5 +1,13 @@
 /*=== MEDIA QUERY ===*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:300,400,500,700");
+
+
+@font-face {
+  font-family: "Robo";
+  src: url(../Fonts/Sdroboticsdemo-X3led.ttf) format("truetype");
+}
+
+
 html {
   font-size: 16px;
 }
@@ -199,7 +207,7 @@ button:hover {
 }
 
 .bg-banner-one {
-  background: url(../images/background/bg.jpg) no-repeat;
+  background: url(../images/background/bgg.jfif) no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -257,6 +265,11 @@ button:hover {
   background: url(../images/background/page-title-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
+}
+
+.background-tint {
+  background-color: rgba(238, 0, 255, 0.5);
+  background-blend-mode: multiply;
 }
 
 .section {
@@ -1063,6 +1076,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .banner .slide span{
   text-align: center;
+  font-family: "Robo";
   font-weight: 500;
   font-size: 4rem;
   height: 100%;
@@ -1093,6 +1107,7 @@ select.form-control:not([size]):not([multiple]) {
 .banner .block {
   overflow: hidden;
   position: relative;
+  line-height: 0px;
   z-index: 10;
   max-width: 600px;
   left: 5rem;
@@ -1144,8 +1159,9 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .banner .block h1 {
+  font-family: 'Robo';
   text-transform: uppercase;
-  font-size:6rem;
+  font-size:8rem;
   color: #ff6600;
   font-weight: 500;
   margin-bottom: 5px;
@@ -1153,8 +1169,9 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .banner .block h2 {
+  font-family: 'Robo';
   text-transform: uppercase;
-  font-size: 4.625rem;
+  font-size: 5.5rem;
   color: #fff;
   font-weight: 400;
   text-shadow: 3.5px 6.062px 0px rgba(0, 0, 0, 0.1);
@@ -1166,10 +1183,10 @@ select.form-control:not([size]):not([multiple]) {
     width: 20rem;
   }
   .banner .block h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
   .banner .block h2 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   .banner .slide{
     opacity: 0;
@@ -1180,17 +1197,23 @@ select.form-control:not([size]):not([multiple]) {
     padding: auto;
   }
   .banner .block h1{
-    font-size: 3rem;
+    font-size: 4rem;
     margin-right: 5px;
   }
   .banner .block h2{
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
 }
 
 
 
+.banner .block h4 {
+  max-width: 450px;
+  color: #c0c0c0;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
 
 .banner .block h6 {
   color: #fff;
