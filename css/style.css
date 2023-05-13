@@ -2525,6 +2525,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .news .blog-post {
+  background: linear-gradient(#d73863,#f96151,#f87752);
   transition: .2s ease;
   margin-bottom: 30px;
 }
@@ -2588,7 +2589,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .news .blog-post .post-content .post-title h2 a {
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 400;
   color: #EEEEEE;
 }
