@@ -268,8 +268,8 @@ button:hover {
 }
 
 .background-tint {
-  background-color: rgba(238, 0, 255, 0.5);
-  background-blend-mode: multiply;
+  background-color:#55174f;
+  background-blend-mode: overlay;
 }
 
 .section {
@@ -1249,6 +1249,15 @@ select.form-control:not([size]):not([multiple]) {
   margin-bottom: 60px;
 }
 
+.about{
+  background: linear-gradient(#55174f,#d73863);
+}
+
+.about .container{
+  display: flex;
+  flex-direction: column;
+}
+
 .about .image-block {
   padding: 30px;
 }
@@ -1278,12 +1287,12 @@ select.form-control:not([size]):not([multiple]) {
   }
 }
 
-.about .content-block h2 {
+.about .content-block h3 {
   margin-bottom: 35px;
-  color: #b4b1b1;
+  color: #ffffff;
 }
 
-.about .content-block h2:after {
+.about .content-block h3:after {
   content: "";
   width: 60px;
   height: 3px;
@@ -1304,16 +1313,8 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .about .content-block .description-one p {
-  color: #222222;
+  color: #9e9e9e;
   font-size: 1.0625rem;
-}
-
-.about .content-block .description-two {
-  margin-bottom: 30px;
-}
-
-.about .content-block .description-two p {
-  font-size: 0.9375em;
 }
 
 .about .content-block .list-inline-item:not(:last-child) {
@@ -1326,6 +1327,19 @@ select.form-control:not([size]):not([multiple]) {
     overflow-x: hidden;
   }
 }
+
+.about .about2{
+  display: flex;
+}
+
+@media (max-width:480px){
+  .about .about2{
+    flex-direction: column-reverse;
+
+  }
+}
+
+
 
 .speakers {
   position: relative;
@@ -1816,14 +1830,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .registration {
   position: relative;
-  max-width: 1920px;
   overflow: hidden;
-}
-
-@media (min-width: 1920px){
-  .registration{
-    left: calc(50% - 1920px/2);
-  }
 }
 
 .registration .btn{
@@ -1878,16 +1885,10 @@ select.form-control:not([size]):not([multiple]) {
 .registration .registration-block {
   position: relative;
   height: 100%;
-  max-width: 1800px;
   width: 100%;
   padding: 120px 10%;
 }
 
-@media (min-width:1536px){
-  .registration .registration-block{
-    left: calc(50% - 1536px/2);
-  }
-}
 
 .registration .registration-block .block {
   position: relative;
