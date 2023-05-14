@@ -573,7 +573,7 @@ select.form-control:not([size]):not([multiple]) {
 @media (max-width:480px){
   .main-nav{
     max-height: 50px;
-    max-width: 425px;
+    max-width: 480px;
   }
   .main-nav img {
     max-width: 40px;
@@ -586,7 +586,12 @@ select.form-control:not([size]):not([multiple]) {
     top: -1rem;
   }
 }
-
+@media (max-width:380px){
+  .main-nav{
+    overflow-y: hidden;
+    max-width: 375px;
+  }
+}
 @media (max-width:768px){
   .main-nav .hammenu{
     opacity: 1;
@@ -1197,16 +1202,19 @@ select.form-control:not([size]):not([multiple]) {
   .banner .container{
     padding: auto;
   }
+  .banner .block{
+    left: 10%;
+  }
   .banner .block h1{
-    line-height: 1rem;
+    line-height: 3rem;
     font-size: 4rem;
     margin-right: 5px;
   }
   .banner .block h2{
     font-size: 3rem;
   }
-
 }
+
 
 
 
@@ -3431,5 +3439,18 @@ ul.pagination .active a {
     max-width: 420px;
   }
  }
+
+@media (max-width:380px){
+  .contact-box{
+    max-width: 360px;
+  }
+}
+
+@media (max-width:320px){
+  .contact-box{
+    max-width: 300px;
+    overflow-y: hidden;
+  }
+}
 
 /*# sourceMappingURL=maps/style.css.map */
