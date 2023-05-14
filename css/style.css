@@ -15,7 +15,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-color: #000000;
+  background-color: #f8f5f5;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
@@ -786,7 +786,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .footer-main {
-  background: linear-gradient(104.15deg, rgba(255, 102, 0, 0) -39.5%, rgba(255, 102, 0, 0.189338) -7.05%, rgba(255, 102, 0, 0.675367) 65.74%, #FF6600 108.11%);
+  background: linear-gradient(120deg,#ff6600,#fa9319);
   padding: 90px 0;
 }
 
@@ -953,7 +953,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .subfooter {
-  background: linear-gradient(104.15deg, rgba(255, 102, 0, 0) -39.5%, rgba(255, 102, 0, 0.189338) -7.05%, rgba(255, 102, 0, 0.675367) 65.74%, #FF6600 108.11%);
+  background:#ff6600;
   padding: 18px 0;
 }
 
@@ -1068,8 +1068,8 @@ select.form-control:not([size]):not([multiple]) {
   position: relative;
   margin: auto;
   box-sizing: content-box;
-  height: 6rem;
-  left: -5rem;
+  height: 6.5rem;
+  top: 0rem;
   overflow: hidden;
   transform: rotate(90deg);
 }
@@ -1078,7 +1078,7 @@ select.form-control:not([size]):not([multiple]) {
   text-align: center;
   font-family: "Robo";
   font-weight: 500;
-  font-size: 4rem;
+  font-size: 5.5rem;
   height: 100%;
   color: #fa9319;
   display: block;
@@ -1159,12 +1159,13 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .banner .block h1 {
+  line-height: 6rem;
   font-family: 'Robo';
   text-transform: uppercase;
   font-size:8rem;
+  margin-bottom: 25px;
   color: #ff6600;
   font-weight: 500;
-  margin-bottom: 5px;
   text-shadow: 3.5px 6.062px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -1197,6 +1198,7 @@ select.form-control:not([size]):not([multiple]) {
     padding: auto;
   }
   .banner .block h1{
+    line-height: 1rem;
     font-size: 4rem;
     margin-right: 5px;
   }
@@ -1219,6 +1221,11 @@ select.form-control:not([size]):not([multiple]) {
   color: #fff;
   font-weight: 400;
   margin-bottom: 50px;
+  line-height: 2rem;
+}
+
+.banner .block .conc{
+  color: #fff;
 }
 
 .banner-two {
@@ -2544,7 +2551,7 @@ select.form-control:not([size]):not([multiple]) {
 
 
 .news{
-  background: linear-gradient(#55174f,#d73863,#f96151,#f87752,#fa9319);
+  background: linear-gradient(#d73863,#55174f);
 
 }
 
