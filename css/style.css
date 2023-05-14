@@ -217,7 +217,7 @@ button:hover {
 }
 
 .bg-speaker {
-  background: url(../images/background/spaeker-background.jpg) fixed no-repeat;
+  background: url(../images/background/bg4.jpg) fixed no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -2551,7 +2551,7 @@ select.form-control:not([size]):not([multiple]) {
 
 
 .news{
-  background: linear-gradient(#d73863,#55174f);
+  background: linear-gradient(#55174f,#d73863);
 
 }
 
@@ -2857,7 +2857,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .call{
-  background: #000000;
+  background:linear-gradient(#d73863,#f96151);
 }
 
 .call .container{
@@ -3318,6 +3318,7 @@ ul.pagination .active a {
 }
 
 .contact-form{
+  background: linear-gradient(#55174f,#d73863);
   position: relative;
   display: grid;
   align-items: center;
@@ -3330,7 +3331,7 @@ ul.pagination .active a {
 
 .contact-form .contact-thumb-wrap{
   position: fixed;
-  background: #ff6600;
+  background: linear-gradient(#f96151,#f87752);
   border-radius: 16px;
   margin:30px 5px 5px 5px;
   position: inherit;
@@ -3409,7 +3410,8 @@ ul.pagination .active a {
 }
 @media (max-width: 1024px) {
   .contact-box {
-    left: calc(50% - 1014px/2);
+    left: -16.5%;
+    max-width: 960px;
     grid-template-columns: 1fr;
     overflow-x: hidden;
 }
@@ -3417,14 +3419,16 @@ ul.pagination .active a {
 
 @media (max-width: 768px) {
   .contact-box {
-    left: calc(50% - 768px/2);
+    left: -25%;
+    max-width: 750px;
     overflow: visible;
 }
 }
 
 @media screen and (max-width: 480px) {
   .contact-box{
-   left: -150px;
+    left: -25.5%;
+    max-width: 420px;
   }
  }
 
