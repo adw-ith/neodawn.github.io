@@ -86,16 +86,6 @@ ul.social-links li a i {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.overlay:before {
-  content: '';
-  background: url(../images/background/objects.png) no-repeat;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
 .overlay:after {
   content: '';
   background: -webkit-linear-gradient(-45deg, #1e5799 0%, #1d1546 0%, #1a0b25 100%, #207cca 100%);
@@ -1115,7 +1105,7 @@ select.form-control:not([size]):not([multiple]) {
   line-height: 0px;
   z-index: 10;
   max-width: 600px;
-  left: 5rem;
+  left: 4rem;
 }
 
 .banner .block .timer .syotimer-cell {
