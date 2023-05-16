@@ -810,14 +810,38 @@ select.form-control:not([size]):not([multiple]) {
   grid-template-columns: 1fr 1fr;
 }
 
+.footer-main .form{
+  background:linear-gradient(268.41deg, #D73863 -173.77%, #E2455D -78.56%, #F55D53 54.73%, #F96151 121.38%);
+  border: 1px solid #fff;
+  border-radius: 16px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
 .footer-main .block{
   min-width: 625px;
   left: 0px;
 }
 
 .footer-main .block p{
-  color: #c8c8c8;
+  color: #000000;
+  margin-bottom: 10px;
   text-align: justify;
+}
+
+.footer-main .block .form-control.main{
+  background: #f96151;
+  border: 1px solid #fff;
+}
+
+.footer-main .block button{
+  border-radius: 32px;
+  font-weight: bold;
+  background: #f96151;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.footer-main .block button:hover{
+  background: #fa9319;
 }
 
 
@@ -826,9 +850,15 @@ select.form-control:not([size]):not([multiple]) {
     grid-template-columns: 1fr;
     margin: auto;
   }
-  .footer-main .block p{
+  .footer-main .block{
     overflow-x: hidden;
-    max-width: 510px;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 480px){
+  .footer-main .block p{
+    max-width: 420px;
   }
 }
 
