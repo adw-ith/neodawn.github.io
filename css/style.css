@@ -781,7 +781,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .footer-main {
-  background: linear-gradient(120deg,#ff6600,#fa9319);
+  background:linear-gradient(#f96151,#f87752);
   padding: 90px 0;
 }
 
@@ -948,7 +948,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .subfooter {
-  background:#ff6600;
+  background:linear-gradient(#f96151,#f87752);
   padding: 18px 0;
 }
 
