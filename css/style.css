@@ -1423,8 +1423,17 @@ select.form-control:not([size]):not([multiple]) {
 
 .speakers .speaker-item .image {
   margin-bottom: 16px;
+  min-width: 190px;
+  min-height: 190px;
+  border: 1px solid #aeaeae;
   position: relative;
   overflow: hidden;
+}
+
+.speakers .speaker-item .image img{
+  aspect-ratio: 1;
+  object-fit: contain;
+  padding: 5px;
 }
 
 @media (max-width: 480px) {
