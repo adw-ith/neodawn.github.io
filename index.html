@@ -634,7 +634,7 @@
               </div>
             </div>
           </div>
-          <form action="#" class="row">
+          <form class="row" id="formsubmit-view">
             <div class="col-md-6">
               <input
                 type="text"
@@ -653,7 +653,16 @@
                 placeholder="Email"
               />
             </div>
-            <div class="col-md-12">
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control main"
+                name="subject"
+                id="subject"
+                placeholder="Subject"
+              />
+            </div>
+            <div class="col-md-6">
               <input
                 type="text"
                 class="form-control main"
@@ -677,6 +686,9 @@
               </button>
             </div>
           </form>
+		  <div class="row" id="submitted-view" style="display:none">
+			Thank you
+		  </div>
         </div>
       </div>
     </section>
