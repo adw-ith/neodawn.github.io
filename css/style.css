@@ -170,7 +170,7 @@ ul.social-links li a i {
 }
 
 span.alternate {
-  color: #ff6600;
+  color: #fa9319;
   font-style: italic;
   font-weight: 400;
 }
@@ -2886,6 +2886,23 @@ select.form-control:not([size]):not([multiple]) {
 
 .call{
   background:linear-gradient(#d73863,#f96151);
+}
+
+.call h3{
+  color: #fff;
+}
+
+.call p{
+  color: #b7b4b4;
+}
+
+.call a{
+  background: #f96151;
+}
+
+.call .alternate{
+  font-weight: bold;
+  color: #fa9319;
 }
 
 .call .container{
