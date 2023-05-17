@@ -3351,7 +3351,15 @@ ul.pagination .active a {
   display: grid;
   align-items: center;
 }
-
+.contact-form .submitted-form{
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 32px;
+  font-size: 1.5rem;
+  height: 45%;
+  color: #bdbdbd;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
 
 .contact-form .form-control {
   margin-bottom: 30px;
