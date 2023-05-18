@@ -15,7 +15,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-color: f8f9fa;
+  background-color: #f8f9fa;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
@@ -1360,7 +1360,7 @@ select.form-control:not([size]):not([multiple]) {
   .about .image-block {
     margin-bottom: 30px;
     text-align: center;
-    overflow-x: hidden;
+    overflow: hidden;
   }
 }
 
