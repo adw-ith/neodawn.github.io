@@ -468,7 +468,7 @@ select.form-control:not([size]):not([multiple]) {
 .btn-main {
   padding: 25px 45px;
   border-radius: 3px;
-  background: #ff6600;
+  background: linear-gradient(#f96151,#f87752);
   color: #fff;
   outline: none;
 }
@@ -485,7 +485,7 @@ select.form-control:not([size]):not([multiple]) {
 .btn-main-md {
   padding: 15px 40px;
   border-radius: 0;
-  background: #ff6600;
+  background: linear-gradient(#f96151,#f87752);
   color: #fff;
   outline: none;
   font-size: 0.9375rem;
@@ -1953,8 +1953,16 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .registration .mail-form{
+  position: relative;
   display: grid;
+  max-width: 1440px;
   align-items: center;
+}
+
+@media(min-width:1800px){
+  .registration .mail-form{
+    left: calc(50% - 1536px/2);
+  }
 }
 
 .registration .service-block {
@@ -2666,6 +2674,12 @@ select.form-control:not([size]):not([multiple]) {
   background: linear-gradient(#d73863,#f96151,#f87752);
   transition: .2s ease;
   margin-bottom: 30px;
+}
+
+.news img{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 767px) {
