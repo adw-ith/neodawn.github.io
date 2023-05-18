@@ -15,7 +15,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-color: black;
+  background-color: #55174f;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
@@ -175,6 +175,10 @@ span.alternate {
   font-weight: 400;
 }
 
+span.white{
+  color: #fff;
+}
+
 a {
   transition: 0.2s ease;
 }
@@ -201,10 +205,20 @@ button:hover {
   background-size: cover;
   background-position: center center;
 }
+
 .bg-about {
   background: url(../images/background/pattern-background.jpg) no-repeat;
   background-size: cover;
 }
+
+/* .bg-about1 {
+  background: url(../images/background/pattern-background.jpg) no-repeat;
+  background-size: cover;
+}
+.bg-about2 {
+  background: url(../images/background/pattern-background.jpg) no-repeat;
+  background-size: cover;
+} */
 
 .bg-speaker {
   background: url(../images/background/bg4.jpg) fixed no-repeat;
@@ -258,7 +272,7 @@ button:hover {
 }
 
 .background-tint {
-  background-color:#55174f;
+  background-color:#55174fa7;
   background-blend-mode: overlay;
 }
 
@@ -541,8 +555,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .main-nav {
-  background: transparent;
-  backdrop-filter: blur(20px);
+  background: linear-gradient(#d73863,#55174f);
 }
 
 .main-nav .hammenu {
@@ -822,15 +835,20 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .footer-main .block{
-  min-width: 625px;
+  min-width: 500px;
   left: 0px;
 }
 
 .footer-main .block p{
-  color: #000000;
+  color: rgb(80, 75, 75);
   margin-bottom: 10px;
   text-align: justify;
 }
+
+.footer-main .block h6{
+  color: #21201e;
+}
+
 
 .footer-main .block .form-control.main{
   background: #f96151;
@@ -872,8 +890,14 @@ select.form-control:not([size]):not([multiple]) {
   grid-template-columns: 1fr 10fr;
 }
 
+.footer-main .block .footer-logo img{
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
 .footer-main .block .footer-logo .logo{
   max-width: 100px;
+  margin-right: .5rem;
 }
 
 .footer-main .block .footer-logo .title{
@@ -885,10 +909,12 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .footer-main .block .footer-logo .title span.grey{
-  color: #848484;
+  color: #302f2f;
 }
 
 .footer-main .block .footer-logo h2{
+  color: #572753;
+  font-family: "Robo";
   line-height: 5px;
 }
 
@@ -899,6 +925,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .footer-main .links {
+  min-width: 300px;
   position: relative;
   margin:20px;
   right: 0px;
@@ -934,7 +961,6 @@ select.form-control:not([size]):not([multiple]) {
   .footer-main .social {
     overflow-x: hidden;
     right: 100px;
-
   }
 }
 
@@ -979,6 +1005,12 @@ select.form-control:not([size]):not([multiple]) {
 
 .footer-main .social ul.social-links-footer li a:hover i {
   color: #fff;
+}
+
+@media (max-width:480px){
+  .footer-main .social{
+    left: 0;
+  }
 }
 
 .subfooter {
@@ -1245,12 +1277,15 @@ select.form-control:not([size]):not([multiple]) {
 .banner .block h4 {
   max-width: 450px;
   color: #c0c0c0;
+  font-size: 1.3rem;
   font-weight: 400;
   margin-bottom: 50px;
 }
 
 .banner .block h6 {
+  margin-left: 1rem;
   color: #fff;
+  font-size: 1.1rem;
   font-weight: 400;
   margin-bottom: 50px;
   line-height: 2rem;
@@ -1399,7 +1434,8 @@ select.form-control:not([size]):not([multiple]) {
 .speakers .organizer{
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .speakers .know-more{
@@ -1437,7 +1473,8 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .speakers .speaker-item {
-  background: linear-gradient(#55174f,#d73863,#f96151);
+  max-width: fit-content;
+  background: #f6d8d8;
   border-radius: 16px;
   margin-bottom: 30px;
 }
@@ -1470,7 +1507,7 @@ select.form-control:not([size]):not([multiple]) {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #55174f;
+  background: #d73863;
   opacity: .85;
   transition: .3s ease;
 }
@@ -3524,5 +3561,38 @@ ul.pagination .active a {
     overflow-y: hidden;
   }
 }
+
+
+
+/* organizers page css */
+
+.bg-organizer{
+  background: url("../images/background/bg-org.jpg"), #501A4E;
+  background-blend-mode: color-dodge, normal;
+}
+
+.organizer{
+  overflow-x: hidden;
+}
+
+.organizer .image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 200px;
+  max-height: 250px;
+  min-width: 200px;
+  min-height: 200px;
+  border: 1px solid white;
+  position: relative;
+  overflow: hidden;
+}
+
+.organizer .image img{
+  width: 60%;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
 
 /*# sourceMappingURL=maps/style.css.map */
