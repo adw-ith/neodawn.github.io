@@ -1500,7 +1500,7 @@ select.form-control:not([size]):not([multiple]) {
   position: relative;
 }
 
-.speakers .organizer{
+.speakers .order{
   position: relative;
   display: grid;
   justify-content: center;
@@ -1525,13 +1525,20 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 @media(max-width:1024px){
-  .speakers .organizer{
+  .speakers .order{
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
+@media(max-width:640px){
+  .speakers .order{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
 @media(max-width:480px){
-  .speakers .organizer{
+  .speakers .order{
     grid-template-columns: 1fr;
   }
 }
@@ -1539,10 +1546,12 @@ select.form-control:not([size]):not([multiple]) {
 .speakers.white .speaker-item {
   background: #fff;
   border: 1px solid #e5e5e5;
+  min-width: 250px;
+  min-height: 250px;
 }
 
 .speakers .speaker-item {
-  max-width: fit-content;
+  max-width: 250px;
   background: #f6d8d8;
   border-radius: 16px;
   margin-bottom: 30px;
@@ -1560,7 +1569,7 @@ select.form-control:not([size]):not([multiple]) {
 .speakers .speaker-item .image img{
   aspect-ratio: 1;
   object-fit: contain;
-  padding: 5px;
+  padding: 1rem;
 }
 
 @media (max-width: 480px) {
