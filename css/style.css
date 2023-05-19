@@ -591,6 +591,7 @@ select.form-control:not([size]):not([multiple]) {
   position: relative;
   text-align: center;
   top: -1.8rem;
+  padding-right: 0;
 }
 
 .main-nav .hamlist .row{
@@ -3673,23 +3674,41 @@ ul.pagination .active a {
 /* organizers page css */
 
 .bg-organizer{
-  background: url("../images/background/bg-org.jpg"), #501A4E;
-  background-blend-mode: color-dodge, normal;
+  background: linear-gradient(30deg,#55174f,#d73863);
 }
 
 .organizer{
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.organizer h2{
+  color: #fff;
+  font-family: 'Robo';
+  font-weight: normal;
+  text-align: right;
+  line-height: 6.5rem;
+  font-size: 8rem;
+}
+
+.organizer h4{
+  color: #fa9319;
+}
+
+.organizer p{
+  color: #fff;
 }
 
 .organizer .image{
   display: flex;
   align-items: center;
+  margin: auto;
   justify-content: center;
-  max-width: 200px;
-  max-height: 250px;
-  min-width: 200px;
+  width: 200px;
+  border-radius: 40px;
+  background: rgba(41, 0, 58, 0.68);
   min-height: 200px;
-  border: 1px solid white;
   position: relative;
   overflow: hidden;
 }
@@ -3698,6 +3717,30 @@ ul.pagination .active a {
   width: 60%;
   aspect-ratio: 1;
   object-fit: contain;
+}
+
+.organizer .typeleft{
+  justify-content: center;
+}
+
+.organizer .typeright{
+  justify-content: center;
+}
+
+@media(max-width:480px){
+  .organizer .typeright{
+    flex-direction: column-reverse;
+  }
+  .organizer h2{
+    font-size: 4.5rem;
+    line-height: 3.5rem;
+  }
+}
+
+.organizer .text{
+  padding: 2rem;
+  background: rgba(41, 0, 58, 0.68);
+  border-radius: 40px;
 }
 
 
