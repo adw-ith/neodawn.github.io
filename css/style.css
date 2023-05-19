@@ -16,6 +16,7 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   background-color: #f8f9fa;
+  overflow-x: hidden;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
@@ -556,26 +557,73 @@ select.form-control:not([size]):not([multiple]) {
 
 .main-nav {
   background: linear-gradient(#d73863,#55174f);
+  max-height: 70px;
 }
 
 .main-nav .hammenu {
-  position: relative;
-  color: white;
-  right: 2rem;
+  margin: auto;
+  max-height: 50px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: auto;
+  right: 1rem;
+  margin-right: 1rem;
   opacity: 0;
 } 
+
+.main-nav .hammenu span{
+  position: relative;
+  top: 1rem;
+  color: white;
+}
 
 .main-nav .hammenu :hover{
   color: #fa9319;
 }
 
-.main-nav .menu1{
-  opacity: 0;
+.hamdisp{
+  display: none;
+}
+
+.main-nav .hamlist{
+  position: relative;
+  text-align: center;
+  top: -1.8rem;
+}
+
+.main-nav .hamlist .row{
+  margin-left: 60%;
+  margin-right: 0;
+  background: white;
+}
+
+.main-nav .hamlist .hamitem{
+  border: 1px solid black;
+  border-top: 0;
+  padding: 1rem  3rem 1rem 3rem;
+}
+
+.main-nav .hamlist .hamitem:hover{
+  background-color: #55174f9a;
+}
+
+.main-nav .hamlist .hamitem a{
+  color: #fa9319;
+}
+
+.main-nav .hamlist ul{
+  list-style: none;
+  min-height: fit-content;
+  padding: 0;
+  margin: 0;
 }
 
 
 @media (max-width:768px){
   .main-nav .hammenu{
+    top: -0.5rem;
     opacity: 1;
   }
 }
@@ -591,14 +639,17 @@ select.form-control:not([size]):not([multiple]) {
     left: -25px;
   }
   .main-nav .hammenu{
-    top: -1rem;
+    top: -0.3rem;
   }
 }
 @media (max-width:380px){
   .main-nav{
     overflow-y: hidden;
-    max-width: 375px;
   }
+}
+
+.main-nav .registerbtn{
+  font-size: 0.9rem;
 }
 
 .main-nav .btn{
@@ -644,7 +695,7 @@ select.form-control:not([size]):not([multiple]) {
   color: #ffffff;
   padding-left: 25px;
   padding-right: 25px;
-  font-size: 1.06rem;
+  font-size: 0.9rem;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -1099,6 +1150,7 @@ select.form-control:not([size]):not([multiple]) {
 .banner {
   padding: 250px 0 150px;
   position: relative;
+  overflow: hidden;
 }
 
 @media (min-width: 1024px){
@@ -1259,6 +1311,7 @@ select.form-control:not([size]):not([multiple]) {
   }
   .banner .block{
     left: 10%;
+    overflow: hidden;
   }
   .banner .block h1{
     line-height: 3rem;
@@ -1324,6 +1377,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .about{
   background: linear-gradient(#55174f,#d73863);
+  overflow-x: hidden ;
 }
 
 .about .container{
@@ -2995,7 +3049,6 @@ select.form-control:not([size]):not([multiple]) {
 .call .image{
   margin: auto;
   width: 300px;
-  min-height: 300px;
   border-radius: 100%;
   box-shadow: 0px 0px 59px 0px rgba(11, 29, 66, 0.15);
 }
