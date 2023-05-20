@@ -3785,6 +3785,7 @@ ul.pagination .active a {
 
 .summit p{
   color: #fff;
+  font-size: 1.2rem;
 }
 
 .summit .sumtext{
@@ -4062,6 +4063,47 @@ ul.pagination .active a {
 
 .speaker-element:hover .speakerinfo{
   top: 0;
+}
+
+.tracks h3{
+  color: #fff;
+  text-align: center;
+}
+
+.tracks .trackname{
+  width: 100%;
+  padding: 2rem;
+  z-index: 10;
+  border-radius: 60px;
+  background: url("../images/background/workshopbg.jpeg") no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.tracks .trackname:hover{
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.tracks .trackname h3{
+  color: #fff;
+
+}
+
+.tracks .trackdesc{
+  padding: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 3rem;
+  background: #57045f81;
+  border-radius: 5%;
+}
+
+.trackdisp{
+  display: none;
+}
+
+.tracks .trackdesc p{
+  text-align: justify;
 }
 
 /*# sourceMappingURL=maps/style.css.map */
