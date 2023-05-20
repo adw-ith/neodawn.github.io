@@ -4016,6 +4016,23 @@ ul.pagination .active a {
   }
 }
 
+@media (max-width:456px) {
+  .speakerinfo ul {
+    width: 64%;
+    position: relative;
+    top: 12%;
+  }
+  .speakerinfo h4{
+    position: relative;
+    top: 50%;
+  }
+  .speakerinfo p{
+    position: relative;
+    top: 50%;
+    margin-bottom:1rem;
+  }
+}
+
 .speakerinfo ul li.list-inline-item:not(:last-child) {
   margin-right: 7px;
   margin-bottom: 10px;
