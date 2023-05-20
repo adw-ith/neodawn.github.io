@@ -143,14 +143,49 @@ function send_mail(event) {
 	document.querySelector('#submitted-view').style.display = 'block';
 }
 
-const hamicon = document.querySelector(".hammenu")
-const menu = document.querySelector(".hamlist")
+const hamicon = document.querySelector(".hammenu");
+const menu = document.querySelector(".hamlist");
 
 hamicon.addEventListener("click", () => {
     if (menu.classList.contains("hamdisp")){
-        menu.classList.remove("hamdisp")
+        menu.classList.remove("hamdisp");
     }
     else{
-        menu.classList.add("hamdisp")
+        menu.classList.add("hamdisp");
+    }
+})
+
+const track1 = document.getElementById("t1");
+const track2 = document.getElementById("t2");
+const track3 = document.getElementById("t3");
+const desc1 = document.getElementById("c1");
+const desc2 = document.getElementById("c2");
+const desc3 = document.getElementById("c3");
+
+track1.addEventListener("click", () => {
+    if (desc1.classList.contains("trackdisp")){
+        desc1.classList.remove("trackdisp");
+    }
+    else{
+        desc1.classList.add("trackdisp");
+    }
+
+})
+
+track2.addEventListener("click", () => {
+    if (desc2.classList.contains("trackdisp")){
+        desc2.classList.remove("trackdisp");
+    }
+    else{
+        desc2.classList.add("trackdisp");
+    }
+})
+
+track3.addEventListener("click", () => {   
+    if (desc3.classList.contains("trackdisp")){
+        desc3.classList.remove("trackdisp");
+    }
+    else{
+        desc3.classList.add("trackdisp");
     }
 })
