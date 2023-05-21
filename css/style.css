@@ -576,7 +576,7 @@ select.form-control:not([size]):not([multiple]) {
 .main-nav .hammenu span{
   position: relative;
   top: 1rem;
-  color: white;
+  color: #000;
 }
 
 .main-nav .hammenu :hover{
