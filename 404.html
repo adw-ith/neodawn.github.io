@@ -33,45 +33,80 @@
     <!--========================================
 =            Navigation Section            =
 =========================================-->
-    <nav class="navbar main-nav border-less fixed-top navbar-expand-lg p-0">
-      <div class="container-fluid p-0">
-        <!-- logo -->
-        <a class="navbar-brand" href="index.html">
-          <img src="images/logos.png" alt="logo" />
-        </a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home </a>
+<nav class="navbar main-nav border-less fixed-top navbar-expand-lg p-0">
+  <div class="container-fluid p-0">
+    <!-- logo -->
+    <a class="navbar-brand" href="index.html">
+      <img src="images/Logos/logo neo.png" alt="logo" />
+    </a>
+    <ul class="hammenu">
+      <li class="">
+        <span class="fa fa-bars"></span>
+    </li>
+  </ul>
+      <div class="container hamlist hamdisp">
+        <div class="row">
+          <ul class="">
+            <li class="hamitem">
+              <a href="index.html#abt">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+            <li class="hamitem">
+              <a href="organizers.html">Organizers</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="speakers.html">Speakers </a>
+            <li class="hamitem">
+              <a href="">Be a speaker</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="schedule.html">Schedule</a>
+            <li class="hamitem">
+              <a href="">Partner with us</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sponsors.html">Sponsors</a>
+            <li class="hamitem">
+              <a href="index.html#events">Events</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blogs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Venue</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+            <li class="hamitem">
+              <a href="index.html#cnt">Contact Us</a>
             </li>
           </ul>
-          <a href="#" class="btn btn-main-md">
-            <span>Register Now</span>
-          </a>
         </div>
       </div>
-    </nav>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#abt">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="organizers.html">Organizers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Be a Speaker</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Partner with Us</a>
+        </li>
+        <li class="nav-item dropdown dropdown-slide">
+          <a class="nav-link" href="#" data-toggle="dropdown"
+            >Events <i class="fa fa-chevron-down"></i
+          ></a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="summit.html">Summit</a>
+            <a class="dropdown-item" href="workshop.html">Workshops</a>
+            <a class="dropdown-item" href="museum.html">Future Museum</a>
+          </div>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">Venue</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#cnt">Contact</a>
+        </li>
+      </ul>
+      <a href="index.html#registr" class="registerbtn btn btn-main-md">
+        <span>Registeration Opening Soon</span>
+      </a>
+  </div>
+</nav>
 
     <!--====  End of Navigation Section  ====-->
 
@@ -124,47 +159,57 @@
             <div class="block text-left">
               <div class="footer-logo">
                 <div class="logo">
-                  <img src="images/logos.png" alt="logo" class="img-fluid" />
+                  <img
+                    src="images/Logos/logo neo.png"
+                    alt="logo"
+                    class="img-fluid"
+                  />
                 </div>
                 <div class="title">
                   <h2>NEODAWN</h2>
-                  <span class="alternate"
-                    >Tech summit <span class="grey">2024</span></span
+                  <span class="white"
+                    >CONCLAVE <span class="grey">2024</span></span
                   >
                 </div>
               </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                illum facilis voluptatem. Modi vel cumque, odit quam accusamus
-                autem totam corporis id adipisci quibusdam porro sint sequi
-                deserunt sed quisquam.
-              </p>
+              <div class="block">
+                <h6>
+                  IEEE Mar Athanasius College of Engineering Student Branch
+                </h6>
+                <p>
+                  Mar Athanasius College of Engineering <br />
+                  {College address}
+                </p>
+              </div>
             </div>
-            <div class="links">
-              <ul class="about-item">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Schedule</a></li>
-                <li><a href="#">Sponsors</a></li>
-                <li><a href="#">Venue</a></li>
-                <li><a href="#">Blogs</a></li>
-                <li><a href="#">Buy Tickets</a></li>
-              </ul>
-            </div>
-            <div class="social">
-              <ul class="social-links-footer list-inline">
-                <li class="list-inline-item facebook">
-                  <a href="#"><i class="fa fa-facebook"></i></a>
-                </li>
-                <li class="list-inline-item twitter">
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li class="list-inline-item instagram">
-                  <a href="#"><i class="fa fa-instagram"></i></a>
-                </li>
-                <li class="list-inline-item linkedin">
-                  <a href="#"><i class="fa fa-linkedin"></i></a>
-                </li>
-              </ul>
+            <div class="set">
+              <div class="links">
+                <ul class="about-item">
+                  <li><a href="index.html#abt">About</a></li>
+                  <li><a href="organizers.html">Organizers</a></li>
+                  <li><a href="#">Be a partner</a></li>
+                  <!-- <li><a href="#">Venue</a></li> -->
+                  <li><a href="#">Be a speaker</a></li>
+                  <li><a href="index.html#cnt">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="social">
+                <h5>Connect with Us</h5>
+                <ul class="social-links-footer list-inline">
+                  <li class="list-inline-item facebook">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li class="list-inline-item twitter">
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                  </li>
+                  <li class="list-inline-item instagram">
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                  </li>
+                  <li class="list-inline-item linkedin">
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
