@@ -1277,7 +1277,7 @@ select.form-control:not([size]):not([multiple]) {
   text-transform: uppercase;
   font-size:8rem;
   margin-bottom: 25px;
-  color: #ff6600;
+  color: #fa9319;
   font-weight: 500;
   text-shadow: 3.5px 6.062px 0px rgba(0, 0, 0, 0.1);
 }
