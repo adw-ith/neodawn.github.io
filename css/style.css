@@ -1377,7 +1377,6 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .about{
-  background: #fff;
   overflow-x: hidden ;
 }
 
@@ -2733,7 +2732,7 @@ select.form-control:not([size]):not([multiple]) {
 
 
 .news{
-  background: #fff;
+  background: none;
 
 }
 
@@ -3049,7 +3048,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .call{
-  background:#fff;
+  background:none;
 }
 
 .call h3{
@@ -3553,7 +3552,6 @@ ul.pagination .active a {
 }
 
 .contact-form{
-  background: #fff;
   position: relative;
   display: grid;
   align-items: center;
@@ -3868,6 +3866,7 @@ ul.pagination .active a {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   padding: 1rem;
   border-radius: 10%;
   aspect-ratio: 1;
@@ -3891,11 +3890,11 @@ ul.pagination .active a {
   margin: 0;
   padding: 3rem .5rem 0rem 1rem;
   border-radius: 10%;
-  height: 87%;
+  height: 100%;
+  width: 100%;
   margin-top: 1%;
-  position: absolute;
-  top: 100%;
-  width: 25%;
+  position: relative;
+  top: 110%;
   transition: .5s ease-out;
   overflow: scroll;
 }
@@ -3906,6 +3905,7 @@ ul.pagination .active a {
 
 .media-element .hdng{
   color: #ffffff;
+  position: absolute;
   font-size: 3rem;
   font-weight: bolder;
 }
@@ -3937,9 +3937,6 @@ ul.pagination .active a {
 @media (max-width:480px){
   .media-scroller{
     grid-auto-columns: 90%;
-  }
-  .media-element .desctext{
-    width:75%;
   }
 }
 
@@ -4125,6 +4122,28 @@ ul.pagination .active a {
 
 .museum h2{
   line-height: 7rem;
+}
+
+.tech h3{
+  text-align: center;
+  color: #000;
+}
+
+.collaborators h3{
+  text-align: center;
+  color: #000;
+}
+
+.collaborators .tba{
+  margin-top: 3rem;
+  padding: 3rem;
+  background: #f9625196;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.collaborators .tba h4{
+  text-align: center;
 }
 
 /*# sourceMappingURL=maps/style.css.map */
