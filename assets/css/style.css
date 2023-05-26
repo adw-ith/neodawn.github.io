@@ -146,7 +146,7 @@ header{
 #header.header-scrolled,
 #header.header-inner {
   /* background: linear-gradient(360deg,#55174fdb,#d73863db); */
-  background: #2d053796;
+  background: #f96251b5;
   height: 70px;
 }
 
@@ -185,11 +185,11 @@ header{
 --------------------------------------------------------------*/
 .buy-tickets {
   color: #fff;
-  background: #f96151;
+  background: #d73863;
   padding: 7px 22px;
   margin: 0 0 0 15px;
   border-radius: 50px;
-  border: 2px solid #f96151;
+  border: 2px solid #d73863;
   transition: all ease-in-out 0.3s;
   font-weight: 500;
   line-height: 1;
@@ -244,7 +244,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: rgba(202, 206, 221, 0.8);
+  color: rgba(238, 231, 231, 0.953);
   font-family: "Lato", sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -268,7 +268,7 @@ header{
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #f96151;
+  background-color: #55174fb2;
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
 }
