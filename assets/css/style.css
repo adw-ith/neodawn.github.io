@@ -1557,6 +1557,7 @@ header{
   padding: 0 0 25px 0;
   color: #eee;
   font-size: 14px;
+  overflow-wrap: anywhere;
 }
 
 #footer .footer-top {
