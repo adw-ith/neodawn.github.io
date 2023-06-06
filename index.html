@@ -537,10 +537,8 @@
 
           <div class="form">
             <form
-              action="forms/contact.php"
-              method="post"
               role="form"
-              class="php-email-form"
+			  id="contact-form-view"
             >
               <div class="row">
                 <div class="form-group col-md-6">
@@ -578,22 +576,21 @@
                 <textarea
                   class="form-control"
                   name="message"
+				  id="message"
                   rows="5"
                   placeholder="Message"
                   required
                 ></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">
-                  Your message has been sent. Thank you!
-                </div>
-              </div>
               <div class="text-center">
                 <button type="submit">Send Message</button>
               </div>
             </form>
+			<!-- success message -->
+			<div id="contact-form-submit-view" class="alert alert-success alert-dismissible fade show mt-5" role="alert" style="display: none;">
+				<strong>Success!</strong> Your message has been sent successfully.
+				<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+			</div>
           </div>
         </div>
       </section>
