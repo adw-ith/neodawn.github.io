@@ -230,3 +230,57 @@
   });
 
 })()
+
+// Wait for the DOM to be ready
+document.addEventListener('DOMContentLoaded', function() {
+	// Add event listener to the form
+	document.querySelector('#contact-form-view').addEventListener('submit', send_mail);
+});
+
+function send_mail(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+	// Get the values from the form
+	const name = document.querySelector('#name').value;
+	const email = document.querySelector('#email').value;
+	const message = document.querySelector('#message').value;
+	const subject = document.querySelector('#subject').value;
+
+	// Check if required fields are not empty
+    if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
+        alert('Please fill in all required fields.');
+        return;
+    }
+
+    // Check if email is valid using a regular expression
+    const emailRegex = /^\S+@\S+\.\S+$/;
+    if (!emailRegex.test(email)) {
+        alert('Please enter a valid email address.');
+        return;
+    }
+
+
+	// Send mail using formsubmit.co
+	fetch("https://formsubmit.co/ajax/a04df2ccae5b848911f9d624d1a98820", {
+		method: "POST",
+		headers: {
+			'Content-Type': 'application/json'
+			// 'Accept': 'application/json'
+		},
+		body: JSON.stringify({
+			name: name,
+			email: email,
+			message: message,
+			_subject: subject,
+			_template: "table",
+			_captcha: false
+    	})
+	})
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.log(error));
+
+	// Hide the form and show the success message
+	document.querySelector('#contact-form-view').style.display = 'none';
+	document.querySelector('#contact-form-submit-view').style.display = 'block';
+}
