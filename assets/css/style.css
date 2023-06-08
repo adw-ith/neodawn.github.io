@@ -1524,7 +1524,8 @@ header{
   padding: 12px 15px;
 }
 
-#contact .php-email-form button[type=submit] {
+#contact .sub {
+  margin-top: 1em;
   background: #f96151;
   border: 0;
   padding: 10px 40px;
@@ -1534,7 +1535,7 @@ header{
   cursor: pointer;
 }
 
-#contact .php-email-form button[type=submit]:hover {
+#contact .sub:hover {
   background: #e0072f;
 }
 
