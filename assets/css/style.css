@@ -725,7 +725,7 @@ header{
 }
 
 #speakers .speaker .details p {
-  color: #fff;
+  color: #cacaca;
   font-size: 15px;
   margin-bottom: 10px;
   font-style: italic;
@@ -1929,4 +1929,56 @@ header{
   .lft{
     left: 5%;
   }
+}
+
+.bg-pre{
+  background: #55174f1d;
+}
+
+.pre{
+  padding: 70px 0px 0px;
+}
+
+.pre .hdng{
+  padding: 2rem 0rem 0rem
+}
+
+.pre .hdng h2{
+  font-size: clamp(2rem,3vw,5rem);
+  font-weight: bold;
+}
+
+#round-table{
+  padding: 60px 0px;
+}
+
+#round-table .alternate{
+  color: #ffffff  !important;
+}
+
+#round-table .images{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+
+#round-table .images .btn{
+  background: #f96151;
+  color: white;
+  width: fit-content;
+}
+
+#round-table .images .btn:hover{
+  background: #d73863;
+}
+
+#round-table img{
+  width: 100%;
+  padding: 1em;
+}
+
+#round-table .info p{
+  text-align: justify;
+  padding-inline-end: 1em;
 }
