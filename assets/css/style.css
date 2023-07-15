@@ -144,12 +144,44 @@ header{
   z-index: 997;
 }
 
+#oheader {
+  height: 90px;
+  position: fixed;
+  background: #F6ECEC;
+  left: 0;
+  height: 70px;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+
+#oheader a{
+  color: #f96151;
+}
+
+
+#oheader a:hover{
+  color: #55174f;
+}
+
+
 #header.header-scrolled,
 #header.header-inner {
   /* background: linear-gradient(360deg,#55174fdb,#d73863db); */
-  background: #f96251b5;
+  background: #F6ECEC;
   height: 70px;
+  color: #152b79;
   backdrop-filter: blur(5px);
+}
+
+#header.header-scrolled a{
+  color: #F96151;
+}
+
+#header.header-scrolled a:hover{
+  color: #55174f;
 }
 
 #header #logo h1 {
@@ -175,6 +207,11 @@ header{
   margin: 0;
   max-height: 40px;
 }
+#oheader #logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 40px;
+}
 
 @media (max-width: 992px) {
   #header #logo img {
@@ -186,7 +223,7 @@ header{
 # Buy Tickets
 --------------------------------------------------------------*/
 .buy-tickets {
-  color: #fff;
+  color: #fff !important;
   background: #d73863;
   padding: 7px 22px;
   margin: 0 0 0 15px;
@@ -1981,4 +2018,20 @@ header{
 #round-table .info p{
   text-align: justify;
   padding-inline-end: 1em;
+}
+
+#blogs hr{
+  margin: 0 0 8px;
+  position: relative;
+  border: none;
+  height: 2px;
+  background: #4B5765;
+}
+
+#blogs a{
+  color: #55174f;
+}
+
+#blogs a:hover,a:focus,a:active,a:target{
+  color: #f96151;
 }
